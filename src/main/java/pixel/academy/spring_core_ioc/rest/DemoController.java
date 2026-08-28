@@ -9,6 +9,11 @@ import pixel.academy.spring_core_ioc.common.Chef;
 public class DemoController {
     private Chef myChef;
 
+    //setter injection
+    @Autowired
+    public void setMyChef(Chef theChef){
+        myChef = theChef;
+    }
     //constructor
    /* @Autowired
     public DemoController(Chef theChef){
@@ -16,6 +21,6 @@ public class DemoController {
     }
     @GetMapping("/dailyrecipe")
     public String getDailyRecipe(){
-        return myChef.getDailyRecipe();
+        return myChef.getDailyRecipe();*/
     }
-}
+
