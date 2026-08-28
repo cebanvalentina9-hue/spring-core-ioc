@@ -11,16 +11,18 @@ public class DemoController {
 
     //setter injection
     @Autowired
-    public void setMyChef(Chef theChef){
+    public void setMyChef(Chef theChef) {
         myChef = theChef;
-    }
-    //constructor
-   /* @Autowired
-    public DemoController(Chef theChef){
-        myChef = theChef;
-    }
-    @GetMapping("/dailyrecipe")
-    public String getDailyRecipe(){
-        return myChef.getDailyRecipe();*/
     }
 
+    //constructor
+    @Autowired
+    public DemoController(Chef theChef) {
+        myChef = theChef;
+    }
+
+    @GetMapping("/dailyrecipe")
+    public String getDailyRecipe() {
+        return myChef.getDailyRecipe();
+    }
+}
