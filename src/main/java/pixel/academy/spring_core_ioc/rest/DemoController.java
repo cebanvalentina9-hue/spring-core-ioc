@@ -8,13 +8,15 @@ import pixel.academy.spring_core_ioc.common.Chef;
 
 @RestController
 public class DemoController {
+
     private Chef myChef;
 
-
-    //constructor
+    // constructor
     @Autowired
-    public DemoController(@Qualifier("frenchChef")Chef theChef) {
-        myChef = theChef;
+    public DemoController(
+            @Qualifier("mexicanChef") Chef theChef){
+                myChef = theChef;
+
     }
 
     @GetMapping("/dailyrecipe")
