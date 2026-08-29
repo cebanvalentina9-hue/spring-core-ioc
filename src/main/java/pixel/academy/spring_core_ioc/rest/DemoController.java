@@ -14,7 +14,7 @@ public class DemoController {
     // constructor
     @Autowired
     public DemoController(
-            @Qualifier("mexicanChef") Chef theChef){
+            @Qualifier("greekChef") Chef theChef){
                 myChef = theChef;
 
     }
