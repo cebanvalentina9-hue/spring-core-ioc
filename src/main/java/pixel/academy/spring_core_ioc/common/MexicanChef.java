@@ -28,7 +28,7 @@ public class MexicanChef implements Chef {
     //destroy method
     @PreDestroy
     public void cleanup(){
-        System.out.println("Bean is not about to be destroyed." + getClass().getSimpleName());
+        System.out.println("Bean is about to be destroyed." + getClass().getSimpleName());
     }
 }
 
