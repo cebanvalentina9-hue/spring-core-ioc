@@ -3,14 +3,13 @@ package pixel.academy.spring_core_ioc.common;
 import org.springframework.stereotype.Component;
 
 @Component
-public class FrenchChef implements Chef {
-
+public class TurkishChef implements Chef {
     @Override
     public String getDailyRecipe() {
-        return "Preparez un Boeuf Bourguignon avec vin rouge et herbes";
+        return "kebab";
     }
 
-    public FrenchChef(){
+    public TurkishChef() {
         System.out.println("In constructor: " + getClass().getSimpleName());
     }
 }

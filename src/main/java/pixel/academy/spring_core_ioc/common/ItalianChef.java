@@ -9,4 +9,8 @@ public class ItalianChef implements Chef {
     public String getDailyRecipe() {
         return "Prepare pasta al pomodoro with fresh tomatoes and basil";
     }
+
+    public ItalianChef() {
+        System.out.println("In constructor: " + getClass().getSimpleName());
+    }
 }
