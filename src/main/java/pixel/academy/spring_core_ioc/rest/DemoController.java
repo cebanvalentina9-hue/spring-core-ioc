@@ -13,7 +13,7 @@ public class DemoController {
 
     //constructor
     @Autowired
-    public DemoController(@Qualifier("turkishChef")Chef theChef) {
+    public DemoController(@Qualifier("frenchChef")Chef theChef) {
         myChef = theChef;
     }
 
